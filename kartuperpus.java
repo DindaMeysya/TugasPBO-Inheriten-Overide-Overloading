@@ -1,19 +1,7 @@
-class kartuperpus
+class kartuperpus 
 {
-	protected String nama, nim, fakultas, jurusan, alamat, no_tlp, NamaPerpus;
-	//overload
-	protected kartuperpus()
-	{
-		nama = " Dinda Meysya ";
-		nim = " 1177050032";
-		fakultas = " Saintek ";
-		jurusan = " informatika ";
-		alamat = " Karawang ";
-		no_tlp = " 085719608278 ";
-	}
-	
-	//overload
-	protected kartuperpus(String nama, String nim, String fakultas, String jurusan, String alamat, String no_tlp, String NamaPerpus)
+	protected String nama, nim, fakultas, jurusan, alamat, no_tlp;	
+	protected kartuperpus(String nama, String nim, String fakultas, String jurusan, String alamat, no_tlp)
 	{
 		this.nama=nama;
 		this.nim=nim;
@@ -21,11 +9,6 @@ class kartuperpus
 		this.jurusan=jurusan;
 		this.alamat=alamat;
 		this.no_tlp=no_tlp;
-	}
-	//overide
-	public void NamaPerpus()
-	{
-		System.out.println("Perpustakaan UIN Bandung");
 	}
 	
 	public String getNama() 
